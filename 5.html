@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Mirror </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Explore Michelle Ciarlelli's Mirror Assignment.">
+    <meta property="og:title" content="Mirror">
+    <meta property="og:description" content="Mirror is a 10 page website design that explores the inner works of surveillance through media. This website highlights Michelle Ciarlelli's online portfolio and intrests in a manner that feels like it is being watched and taken over.">
+    <meta name="author" content="Michelle Ciarlelli">
+    <meta name="copyright" content=" @ Michelle Ciarlelli, Student Project, 2025">
+    <link rel="stylesheet" href="default.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/73aae1b72f.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad+Guides&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body class="captcha-page">
+        
+    <nav>
+     <div class="logo"> 
+        <em> Michelle Ciarlelli</em>
+        </div>
+    
+        <div class="menu1">
+            <button class="close-menu">&times;</button>
+        <a href="Index.html">1 |</a>
+        <a href="2.html">2 |</a>
+        <a href="3.html">3 |</a>
+        <a href="4.html">4 |</a>
+        <a href="5.html">5 |</a>
+        <a href="6.html">6 |</a>
+        <a href="7.html">7 |</a>
+        <a href="8.html">8 |</a>
+        <a href="9.html">9 |</a>
+        <a href="10.html">10 |</a>
+        </div>
+
+        <div class="hamburger-menu">
+            <button>
+                <span class="fa fa-bars"></span>
+            </button>
+        </div>
+    </nav>
+    
+        <header>
+       <div class="hero-wrapper2">
+            <h1>MIRROR</h1>
+            </div>
+        <h2 class="sub-title"> HOW I WANT MY DESIGNS TO FEEL LIKE </h2>
+        </header>
+            
+   
+             <div id="captcha-overlay" class="captcha-overlay">
+            <div class="captcha-container">
+            <h2>Complete the CAPTCHA</h2>
+            <p id="captcha-text" class="captcha-text"></p>
+            <input type="text" id="captcha-input" placeholder="Type what you see" />
+            <button id="submit-btn">Submit</button>
+            </div>
+            </div>
+  
+            <div class="video-container">
+            <video src="assets/videoofwomendancing.mp4" alt=" video of silhouette of women dancing" autoplay muted loop></video>
+            <video src="assets/videoofmanflickering.mp4" alt=" video of man's face flickering" autoplay muted loop></video>
+            <video src="assets/videoofsunset.mp4" alt=" video of people falling in love over summer with sunset" autoplay muted loop></video>
+            </div>
+
+    
+        <footer>
+           
+            <div class="credit"> <small>
+               <em>© Michelle Ciarlelli, CART 211, fall 2025, Final Project, MIRROR</em>
+            </small>
+
+            </div>
+            
+        </footer>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerButton = document.querySelector('.hamburger-menu button');
+            const closeButton = document.querySelector('.close-menu');
+            const menu1 = document.querySelector('.menu1');
+
+            // Gestion de l'ouverture du menu
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+
+            // Gestion de la fermeture du menu
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            });
+        });
+    </script>
+
+  <script>
+  // Unique key for this page (optional if you want to track completion per session)
+  const pageKey = 'captchaCompleted-page5';
+
+  const overlay = document.getElementById('captcha-overlay');
+  const captchaDisplay = document.getElementById('captcha-text');
+  const inputField = document.getElementById('captcha-input');
+  const submitBtn = document.getElementById('submit-btn');
+
+  // Function to generate a new CAPTCHA
+  function generateCaptcha() {
+    return Math.random().toString(36).substring(2, 8).toUpperCase();
+  }
+
+  let captchaText = generateCaptcha();
+  captchaDisplay.innerText = captchaText;
+
+  // Always show overlay when page loads
+  overlay.style.display = 'flex';
+
+  // Handle submit
+  submitBtn.addEventListener('click', () => {
+    const input = inputField.value.toUpperCase();
+    if(input === captchaText) {
+      overlay.style.display = 'none';  // Hide CAPTCHA overlay
+      alert("CAPTCHA completed! You can now navigate the page.");
+    } else {
+      alert("Incorrect! Try again.");
+      inputField.value = '';
+      captchaText = generateCaptcha();
+      captchaDisplay.innerText = captchaText;
+    }
+  });
+</script>
+   
+
+     
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Mirror </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Explore Michelle Ciarlelli's Mirror Assignment.">
+    <meta property="og:title" content="Mirror">
+    <meta property="og:description" content="Mirror is a 10 page website design that explores the inner works of surveillance through media. This website highlights Michelle Ciarlelli's online portfolio and intrests in a manner that feels like it is being watched and taken over.">
+    <meta name="author" content="Michelle Ciarlelli">
+    <meta name="copyright" content=" @ Michelle Ciarlelli, Student Project, 2025">
+    <link rel="stylesheet" href="default.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/73aae1b72f.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+</head>
+<body class="background2">
+   
+    <nav>
+        <div class="logo"> 
+        <em> Michelle Ciarlelli</em>
+        </div>
+        
+        <div class="menu1">
+            <button class="close-menu">&times;</button>
+        <a href="Index.html">1 |</a>
+        <a href="2.html">2 |</a>
+        <a href="3.html">3 |</a>
+        <a href="4.html">4 |</a>
+        <a href="5.html">5 |</a>
+        <a href="6.html">6 |</a>
+        <a href="7.html">7 |</a>
+        <a href="8.html">8 |</a>
+        <a href="9.html">9 |</a>
+        <a href="10.html">10 |</a>
+        </div>
+
+        <div class="hamburger-menu">
+            <button>
+                <span class="fa fa-bars"></span>
+            </button>
+        </div>
+    </nav>
+    
+        <header>
+            <div class="hero-wrapper2">
+            <h1>MIRROR</h1>
+            </div>
+       
+       <h2 class="sub-title">ABOUT ME</h2>
+        </header>
+        
+       <main>  
+    <div class="books">
+        <figure class="page2vid">
+            <video autoplay loop muted playsinline width="100%">
+        <source src="assets/VIDEO.mp4" type="video/mp4" alt="Video with eyes"> 
+        Your browser does not support the video tag.
+        </video>
+            <div class="hover-text">FEEL UNCOMFORTABLE YET?</div>
+        </figure>
+
+        <div class="Paragraph1"> 
+            <p>
+                Hello! Welcome to my personal corner of the web. 
+                <span style="color: red;">Nice to see you user.</span> 
+                I’m Michelle, a student designer and creative explorer fascinated by music, social media, and the intersection between media and everyday life.
+                <span style="color: red;"> I am watching you.</span>
+                This site is a reflection of my personal interests in a form of my own personal algorithm. 
+                <span style="color: red;">Keep looking closely.</span> 
+                Through these pages, I share inspirations, ideas that shape how I see the world, and everyday life experiences.
+                <span style="color: red;"> Are you paying attention?</span> I will also be showing how music and personal aesthetics relate to my design practice, showing projects i have completed over the course of 2 years. 
+            </p>
+        </div>
+    </div>
+</main>
+        <footer>
+           
+            <div class="credit"> 
+            <small>
+                <em>© Michelle Ciarlelli, CART 211, fall 2025, Final Project, MIRROR</em>
+            </small>
+
+            </div>
+            
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerButton = document.querySelector('.hamburger-menu button');
+            const closeButton = document.querySelector('.close-menu');
+            const menu1 = document.querySelector('.menu1');
+
+            // Gestion de l'ouverture du menu
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+
+            // Gestion de la fermeture du menu
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            });
+        });
+    </script>
+     <script>
+        window.addEventListener('DOMContentLoaded', () => {
+    const restrictedPages = ['6.html','7.html','8.html','9.html','10.html'];
+
+    document.querySelectorAll('nav a').forEach(link => {
+        if(restrictedPages.includes(link.getAttribute('href'))) {
+            if(localStorage.getItem('captchaCompleted') === 'true') {
+                link.style.pointerEvents = 'auto';
+                link.style.opacity = '1';
+            } else {
+                link.style.pointerEvents = 'none';
+                link.style.opacity = '0.5';
+            }
+        }
+    });
+});
+    </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+Menu on all the pages=
+1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+
+
+H1 on all the pages=
+MIRROR
+
+1 ******************************************************************
+“Mirror” is an interactive website that transforms the idea of a digital portfolio into a self-reflective idea of surveillance and identity. Through glitching visuals, layered typography, and repetition, the project blurs the line between viewer and system, inviting users to question how algorithms both observe and shape the identities we make online. 
+
+Main image 
+Flickering "MIRROR" above 
+
+(Include homepage image)
+(Include background image + glitching effect)
+
+
+2 *****************************************************************
+
+H2: About me 
+Video display
+Small paragraph about me 
+
+
+3 *****************************************************************
+
+10 Photos in mansory grid of all the music I listen to and how it connects to my design practice.
+
+4 *****************************************************************
+
+7 photos , 2 videos, in mansory grid. Flickering background, Shaking images. A moodboard 
+
+
+5 *****************************************************************
+
+Captcha
+3 videos showcasing what I want my designs to feel like.
+
+6 *****************************************************************
+
+5 images of work I did in the last 2 years, flickering background
+
+
+7 *****************************************************************
+
+3 images and 2 videos of work I did in the last 2 years, shaking images. 
+
+
+8 *****************************************************************
+
+Words moving not the screen that I relate to in my practice. 
+
+
+9 *****************************************************************
+
+Artists who inspire me 
+
+10 *****************************************************************
+
+Error message
+
+
+FOOTER on all the pages=
+© your name, cart 211, fall 2025, Final Project
+

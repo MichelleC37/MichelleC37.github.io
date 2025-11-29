@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Mirror </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Explore Michelle Ciarlelli's Mirror Assignment.">
+    <meta property="og:title" content="Mirror">
+    <meta property="og:description" content="Mirror is a 10 page website design that explores the inner works of surveillance through media. This website highlights Michelle Ciarlelli's online portfolio and intrests in a manner that feels like it is being watched and taken over.">
+    <meta name="author" content="Michelle Ciarlelli">
+    <meta name="copyright" content=" @ Michelle Ciarlelli, Student Project, 2025">
+    <link rel="stylesheet" href="default.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/73aae1b72f.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+</head>
+<body class="background4">
+       
+    <nav>
+        
+        <div class="logo"> 
+        <em> Michelle Ciarlelli</em>
+        </div>
+    
+        <div class="menu1">
+            <button class="close-menu">&times;</button>
+        <a href="Index.html">1 |</a>
+        <a href="2.html">2 |</a>
+        <a href="3.html">3 |</a>
+        <a href="4.html">4 |</a>
+        <a href="5.html">5 |</a>
+        <a href="6.html">6 |</a>
+        <a href="7.html">7 |</a>
+        <a href="8.html">8 |</a>
+        <a href="9.html">9 |</a>
+        <a href="10.html">10 |</a>
+        </div>
+
+        <div class="hamburger-menu">
+            <button>
+                <span class="fa fa-bars"></span>
+            </button>
+        </div>
+    </nav>
+    
+        <header>
+       <div class="hero-wrapper2">
+            <h1>MIRROR</h1>
+            </div>
+       <h2 class="sub-title"> HOW MY MUSIC INSPIRES ME </h2>
+        </header>
+        
+
+
+        <main class="aesthetics">  
+        
+            
+                <figure class="im11 shake"> 
+                    
+                    <img src="assets/womenlisteningtomusic.png" alt=" women listening to music" class="fade-edge">
+                </figure>
+
+                <figure class="im12">
+                    <img src="assets/BLACKANDWHITEEYE.png" alt="black and white eye" class="fade-edge"> 
+                </figure>
+
+                <figure class="im13">
+                    <img src="assets/Yellowphotowitheye.png" alt=" man holding camera with yellow hue" class="fade-edge">
+                    
+                </figure>
+
+                <figure class="im14">
+                    <video src="assets/VIDEOSTREET.mp4" alt=" video of street moving fast with color" autoplay muted loop></video>
+                </figure>
+
+                <figure class="im15 shake">
+                    
+                   <img src="assets/BLUEANDORANGEEYE.png" alt="Blue and orange eye"class="fade-edge">
+                </figure>
+
+                 <figure class="im16">
+                    <img src="assets/REDANDYELLOWBODY.png" alt=" Red and Yellow body" class="fade-edge">
+                   
+                </figure>
+
+                  <figure class="im17">
+        
+                    <img src="assets/ONEEYEPINK.png" alt="One eye on the screen all pink" class="fade-edge">
+                   
+                  </figure>
+
+                <figure class="im18">
+                        <video src="assets/Videoblackandwhite.mp4" alt=" video of street moving fast in black and white" autoplay muted loop></video>
+                </figure>
+
+                <figure class="im19 shake">
+                    <img src="assets/BLACKANDWHITEMULTIPLEEYES.png" alt="Multiple eyes all black and white" class="fade-edge">
+                </figure>
+
+                <figure class="mobile-only">
+                    <img src="assets/Pinkbackgroundpeople.jpg" alt="silhouette of people" class="fade-edge">
+                </figure>
+                        
+
+        </main>
+        <footer>
+            
+            <div class="credit"> <small>
+                <em>© Michelle Ciarlelli, CART 211, fall 2025, Final Project, MIRROR</em>
+            </small>
+
+            </div>
+            
+        </footer>
+   
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerButton = document.querySelector('.hamburger-menu button');
+            const closeButton = document.querySelector('.close-menu');
+            const menu1 = document.querySelector('.menu1');
+
+            // Gestion de l'ouverture du menu
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+
+            // Gestion de la fermeture du menu
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            });
+        });
+    </script>
+     <script>
+        window.addEventListener('DOMContentLoaded', () => {
+    const restrictedPages = ['6.html','7.html','8.html','9.html','10.html'];
+
+    document.querySelectorAll('nav a').forEach(link => {
+        if(restrictedPages.includes(link.getAttribute('href'))) {
+            if(localStorage.getItem('captchaCompleted') === 'true') {
+                link.style.pointerEvents = 'auto';
+                link.style.opacity = '1';
+            } else {
+                link.style.pointerEvents = 'none';
+                link.style.opacity = '0.5';
+            }
+        }
+    });
+});
+    </script>
+</body>
+</html>
