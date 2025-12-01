@@ -1685,6 +1685,23 @@ margin-top: 15px;
     object-fit: cover;
 }
 
+ .captcha-overlay {
+     z-index: 2000; 
+     display: flex; 
+    pointer-events: auto; 
+}
+
+    
+.hamburger-menu button {
+    position: relative;
+    z-index: 3000; 
+ }
+
+.menu1 {
+    z-index: 2500; 
+}
+
+
 /* page 6 */
 
 main.projects {

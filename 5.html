@@ -128,6 +128,7 @@
   submitBtn.addEventListener('click', () => {
     if(inputField.value.toUpperCase() === captchaText) {
       overlay.style.display = 'none';
+      overlay.style.pointerEvents = 'none';
       alert('CAPTCHA completed! You can now see the page.');
     } else {
       alert('Incorrect! Try again.');
