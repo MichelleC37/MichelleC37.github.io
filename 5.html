@@ -99,44 +99,39 @@
             const closeButton = document.querySelector('.close-menu');
             const menu1 = document.querySelector('.menu1');
 
-            // Gestion de l'ouverture du menu
+            
             hamburgerButton.addEventListener('click', () => {
                 menu1.classList.add('menu-deployed');
             });
 
-            // Gestion de la fermeture du menu
+            
             closeButton.addEventListener('click', () => {
                 menu1.classList.remove('menu-deployed');
             });
         });
     </script>
-
-  <script>
-  // Unique key for this page (optional if you want to track completion per session)
-  const pageKey = 'captchaCompleted-page5';
-
+<script>
   const overlay = document.getElementById('captcha-overlay');
   const captchaDisplay = document.getElementById('captcha-text');
   const inputField = document.getElementById('captcha-input');
   const submitBtn = document.getElementById('submit-btn');
 
-  // Function to generate a new CAPTCHA
   function generateCaptcha() {
     return Math.random().toString(36).substring(2, 8).toUpperCase();
   }
 
+ 
+  overlay.style.display = 'flex';
+
   let captchaText = generateCaptcha();
   captchaDisplay.innerText = captchaText;
 
-  // Always show overlay when page loads
-  overlay.style.display = 'flex';
-
-  // Handle submit
   submitBtn.addEventListener('click', () => {
     const input = inputField.value.toUpperCase();
     if(input === captchaText) {
-      overlay.style.display = 'none';  // Hide CAPTCHA overlay
-      alert("CAPTCHA completed! You can now navigate the page.");
+      overlay.style.display = 'none';  
+      sessionStorage.setItem('captchaPassed', 'true'); 
+      alert("CAPTCHA completed! You can now navigate pages 6–10.");
     } else {
       alert("Incorrect! Try again.");
       inputField.value = '';
@@ -145,6 +140,7 @@
     }
   });
 </script>
+
    
 
      
