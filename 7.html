@@ -101,38 +101,23 @@
             const closeButton = document.querySelector('.close-menu');
             const menu1 = document.querySelector('.menu1');
 
-            
+            // Gestion de l'ouverture du menu
             hamburgerButton.addEventListener('click', () => {
                 menu1.classList.add('menu-deployed');
             });
 
-            
+            // Gestion de la fermeture du menu
             closeButton.addEventListener('click', () => {
                 menu1.classList.remove('menu-deployed');
             });
         });
     </script>
+    
     <script>
-  if(localStorage.getItem('captchaPassed') !== 'true') {
-      window.location.href = "5.html"; 
+  
+  if (localStorage.getItem('captchaPassed') !== 'true') {
+    window.location.href = "5.html";
   }
 </script>
-     <script>
-        window.addEventListener('DOMContentLoaded', () => {
-    const restrictedPages = ['6.html','7.html','8.html','9.html','10.html'];
-
-    document.querySelectorAll('nav a').forEach(link => {
-        if(restrictedPages.includes(link.getAttribute('href'))) {
-            if(localStorage.getItem('captchaCompleted') === 'true') {
-                link.style.pointerEvents = 'auto';
-                link.style.opacity = '1';
-            } else {
-                link.style.pointerEvents = 'none';
-                link.style.opacity = '0.5';
-            }
-        }
-    });
-});
-    </script>
 </body>
 </html>
